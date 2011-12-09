@@ -1,0 +1,36 @@
+<!-- Play panel -->
+
+<div ng:controller="PlayCtrl">
+	<div id="quiz" ng:show="!finish"><div ng:class="warning" id="clock" name="formattedTime">{{ formattedTime || '5:00' }}</div>
+		<input id="input" name="input" ng:format="trim" ng:change="this.onInputChange()">
+		<p><b id="remaining">{{ elements.length }}</b> elements remaining</p>
+		<ul id="solved" class="element_list">
+			<li ng:repeat="value in solvedList">{{ value }}</li>
+		</ul>
+	</div>
+
+	<div id="outro" ng:show="finish">
+		<h2>Finished!</h2>
+		<p>You named <strong id="named">{{ solvedList.length }}</strong> HTML5 elements in five minutes!</p>
+		<div id="share">
+			<h2>Share Your Score</h2>
+			<div class="share_item">
+	   			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://thehtml5quiz.com/" data-text="' + share_text + '" data-count="vertical">Tweet</a>
+	   			<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+	   		</div>
+	        <div class="share_item">	
+	        	<div class="g-plusone" data-size="tall" data-href="http://thehtml5quiz.com"></div>
+	        	<script type="text/javascript">
+	        		(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
+	       </div>
+	       <div class="share_item">
+	        	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fthehtml5quiz.com%2F&amp;send=false&amp;layout=box_count&amp;width=50&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=90&amp;appId=251751164868646" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:90px;" allowTransparency="true"></iframe>
+			</div>
+		</div>
+		<p id="missed_message">You missed the following elements:</p>
+		<ul id="missed_elements" class="element_list">
+			<li ng:repeat="value in elements">{{ value }}</li>
+		</ul>
+		<a href="#/"><button type="button" id="replay">Again?</button></a>
+	</div>	
+</div>

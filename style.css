@@ -1,0 +1,413 @@
+/*
+    HTML5 Reset :: style.css
+    ----------------------------------------------------------
+    We have learned much from/been inspired by/taken code where offered from:
+
+    Eric Meyer                  :: http://ericmeyer.com
+    HTML5 Doctor                :: http://html5doctor.com
+    and the HTML5 Boilerplate   :: http://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted.
+    don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border: 0 none;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+/* Accessible focus treatment
+    people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {outline: none;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;}
+
+/* Make sure sup and sub don't screw with your line-heights
+    gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+
+/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
+body {font: 13px Helmet, Freesans, sans-serif;}
+
+/* using local fonts? make sure to read up on Paul Irish's
+    Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+/* we like off-black for text */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}html {
+    background: #049ad7;
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    width: 720px;
+    color: #fff;
+    font-family: "Istok Web", sans-serif;
+    text-align: center;
+}
+
+::-moz-selection {
+    background: #e34c26;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #e34c26;
+    color: #fff;
+    text-shadow: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    -moz-transition:        all 0.1s;
+    -o-transition:          all 0.1s;
+    -webkit-transition:     all 0.1s;
+    transition:             all 0.1s;
+}
+
+a:hover {
+    color: #ffa589;
+}
+
+footer a {
+    color: #f16529;
+}
+
+input {
+    margin: 0 0 40px 0;
+    border: 0;
+    padding: 11px 12px;
+    width: 300px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-border-radius:  6px;
+    -moz-border-radius:     6px;
+    border-radius:          6px;
+    -moz-box-shadow:        inset 1px 2px 2px rgba(0, 0, 0, .3);
+    -webkit-box-shadow:     inset 1px 2px 2px rgba(0, 0, 0, .3);
+    box-shadow:             inset 1px 2px 2px rgba(0, 0, 0, .3);
+    -moz-transition:        all 0.125s ease-out;
+    -o-transition:          all 0.125s ease-out;
+    -webkit-transition:     all 0.125s ease-out;
+    transition:             all 0.125s ease-out;
+}
+
+input:focus {
+    outline: none;
+    -moz-box-shadow:        inset 1px 2px 2px rgba(0, 0, 0, .6);
+    -webkit-box-shadow:     inset 1px 2px 2px rgba(0, 0, 0, .6);
+    box-shadow:             inset 1px 2px 2px rgba(0, 0, 0, .6);
+}
+
+header {
+    margin: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0 0 20px 0;
+    height: 128px;
+    position: relative;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 138px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 rgba(3, 88, 154, 0.2);
+    -moz-user-select:       none;
+    -o-user-select:         none;
+    -webkit-user-select:    none;
+    user-select:            none;
+}
+
+h2 {
+    font-size: 18px;
+    text-shadow: 2px 2px 0 rgba(3, 88, 154, 0.2);
+}
+
+header p {
+    position: absolute;
+    top: 95px;
+    left: 135px;
+    color: #82daff;
+    font-size: 16px;
+    text-shadow: 1px 1px 0 rgba(3, 88, 154, 0.2);
+}
+
+.asterisk {
+    font-size: 80%;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+footer {
+    background: #03589a;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+}
+
+footer div {
+    margin: 0 auto;
+    width: 720px;
+}
+
+footer p {
+    float: left;
+}
+
+small {
+    float: right;
+    font-size: 13px;
+}
+
+.love {
+    color: #f12929;
+}
+
+.logo {
+    background: url(html5_logo.png) no-repeat center;
+    display: inline-block;
+    margin: 0 auto;
+    width: 92px;
+    height: 128px;
+    text-indent: -9999px;
+}
+
+#intro {
+    padding: 0 60px;
+    text-align: left;
+}
+
+#intro p {
+    color: #82daff;
+}
+
+#intro p + h2 {
+    margin-top: 20px;
+}
+
+button {
+    background: #e44d26;
+    background:    -moz-linear-gradient(top, #f16529 50%, #e44d26 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f16529), color-stop(50%, #e44d26));
+    background: -webkit-linear-gradient(top, #f16529 50%, #e44d26 50%);
+    background:      -o-linear-gradient(top, #f16529 50%, #e44d26 50%);
+    background:     -ms-linear-gradient(top, #f16529 50%, #e44d26 50%);
+    background:         linear-gradient(top, #f16529 50%, #e44d26 50%);
+    display: block;
+    margin: 40px auto;
+    border: 6px solid #e44d26;
+    padding: 8px;
+    width: 260px;
+    color: #fff;
+    font-family: "Istok Web", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-border-radius:  2px;
+    -moz-border-radius:     2px;
+    border-radius:          2px;
+    -moz-box-shadow:        1px 2px 1px rgba(0, 0, 0, .2);
+    -webkit-box-shadow:     1px 2px 1px rgba(0, 0, 0, .2);
+    box-shadow:             1px 2px 1px rgba(0, 0, 0, .2);
+    -moz-transition:        all 0.1s ease-out;
+    -o-transition:          all 0.1s ease-out;
+    -webkit-transition:     all 0.1s ease-out;
+    transition:             all 0.1s ease-out;
+}
+
+button:hover,
+button:focus {
+    background:    -moz-linear-gradient(top, #f16529 50%, #f16529 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f16529), color-stop(50%, #f16529));
+    background: -webkit-linear-gradient(top, #f16529 50%, #f16529 50%);
+    background:      -o-linear-gradient(top, #f16529 50%, #f16529 50%);
+    background:     -ms-linear-gradient(top, #f16529 50%, #f16529 50%);
+    background:         linear-gradient(top, #f16529 50%, #f16529 50%);
+    -moz-box-shadow:        0 0 5px rgba(0, 0, 0, .5);
+    -webkit-box-shadow:     0 0 5px rgba(0, 0, 0, .5);
+    box-shadow:             0 0 5px rgba(0, 0, 0, .5);
+}
+
+#quiz_wrapper {
+    padding: 0 0 40px 0;
+}
+
+#quiz {
+    display: show;
+}
+
+#clock {
+    margin: 0 auto;
+    width: 105px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(3, 88, 154, 0.7);
+}
+
+.warning,
+#remaining {
+    color: #f16529;
+}
+
+#remaining {
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(3, 88, 154, 0.7);
+}
+
+#quiz p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-shadow: 1px 1px 0 rgba(3, 88, 154, 0.2);
+}
+
+.element_list li {
+    display: inline-block;
+    padding: 0 8px;
+    color: #82daff;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+#outro {
+    display: show;
+}
+
+#outro p {
+    color: #82daff;
+}
+
+#outro strong {
+    color: #fff;
+}
+
+#share {
+    margin: 40px 0;
+}
+
+#share h2 {
+    margin: 0 0 20px;
+}
+
+.share_item {
+    display: inline-block;
+    margin: 0 20px;
+    height: 70px;
+    vertical-align: top;
+}

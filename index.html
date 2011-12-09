@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang=en itemscope itemtype="http://schema.org/CreativeWork" xmlns:ng="http://angularjs.org/">
+<head>
+<meta charset="utf-8">
+	<meta name="author" content="Joe Hillman" />
+	<meta charset=utf-8>
+	<meta itemprop=name content="The HTML5 Elements Quiz">
+	<meta itemprop=description content="I just took the HTML5 Elements Quiz!">
+
+	<link rel="shortcut icon" href=favicon.ico type="image/x-icon">
+	<link rel=icon href=favicon.ico type="image/ico">
+	<link rel=stylesheet href="http://fonts.googleapis.com/css?family=Istok+Web:400,700">
+	<link rel=stylesheet type="text/css" href="style.css">
+	<title>HTML5 Elements Quiz</title>
+</head>
+<body>
+	
+	<div ng:controller="MainCtrl">
+		<header>
+			<h1><span class=logo>HTML5</span> Elements Quiz</h1>
+			<p>How many HTML5 elements<a class=asterisk href="//html5doctor.com/element-index/" rel=external target=_blank title="HTML5 Doctor - Element Index">*</a> can you name in 5 minutes?</p>
+		</header>
+		<ng:view></ng:view>
+		<footer>
+			<div class=clearfix>
+				<p>Created by <a href="//kevinsweeney.info" rel=author target=_blank>Kevin Sweeney</a> - <a href="http://angularjs.org/" target=_blank>Angular.js</a> version by <a href="http://www.webappstogo.com" target=_blank>Joe Hillman</a> - HTML5 Logo by <a href="//www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a></p>
+				<small>Made with <span class=love>❤</span> in Dallas</small>
+			</div>
+		</footer>
+	</div>
+	
+	<!-- JQuery -->
+	<script type="text/javascript" src="jquery.js"></script>
+	<!-- Angular -->
+	<script type="text/javascript" src="angular.js" ng:autobind></script>
+	<!-- Custom Controllers -->
+	<script type="text/javascript" src="MainCtrl.js"></script>
+</body>
+</html>
