@@ -1,0 +1,22 @@
+{
+  "name": "html5-elements-quiz",
+  "version": "2.0.0",
+  "description": "Test your HTML5 knowledge! See how many HTML5 elements you can name in 5 minutes.",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx serve .",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "html5",
+    "quiz",
+    "game",
+    "education",
+    "javascript"
+  ],
+  "author": "Kevin Sweeney, Joe Hillman",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

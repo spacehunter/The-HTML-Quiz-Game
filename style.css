@@ -407,7 +407,138 @@ button:focus {
 
 .share_item {
     display: inline-block;
-    margin: 0 20px;
-    height: 70px;
+    margin: 0 10px;
+    height: auto;
     vertical-align: top;
+}
+
+/* Modern share buttons */
+.share-button {
+    background: #e44d26;
+    background: linear-gradient(to bottom, #f16529 50%, #e44d26 50%);
+    display: inline-block;
+    margin: 10px;
+    border: 3px solid #e44d26;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: "Istok Web", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 2px;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, .2);
+    transition: all 0.1s ease-out;
+}
+
+.share-button:hover,
+.share-button:focus {
+    background: linear-gradient(to bottom, #f16529 50%, #f16529 50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    transform: translateY(-1px);
+}
+
+.share-button.twitter {
+    background: linear-gradient(to bottom, #1da1f2 50%, #0c85d0 50%);
+    border-color: #0c85d0;
+}
+
+.share-button.twitter:hover {
+    background: linear-gradient(to bottom, #1da1f2 50%, #1da1f2 50%);
+}
+
+.share-button.facebook {
+    background: linear-gradient(to bottom, #4267B2 50%, #365899 50%);
+    border-color: #365899;
+}
+
+.share-button.facebook:hover {
+    background: linear-gradient(to bottom, #4267B2 50%, #4267B2 50%);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        width: 90%;
+        padding: 0 5%;
+    }
+
+    footer div {
+        width: 90%;
+        padding: 0 5%;
+    }
+
+    header {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+
+    header p {
+        position: static;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 64px;
+        height: 90px;
+        background-size: contain;
+    }
+
+    input {
+        width: 80%;
+        max-width: 300px;
+        font-size: 18px;
+    }
+
+    button {
+        width: 80%;
+        max-width: 260px;
+        font-size: 20px;
+    }
+
+    #intro {
+        padding: 0 20px;
+    }
+
+    footer p, small {
+        float: none;
+        text-align: center;
+        display: block;
+        margin: 5px 0;
+    }
+
+    .share-button {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    #clock {
+        font-size: 36px;
+    }
+
+    #remaining {
+        font-size: 20px;
+    }
+
+    .element_list li {
+        font-size: 11px;
+        padding: 0 4px;
+    }
 }
